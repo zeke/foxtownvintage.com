@@ -56,15 +56,26 @@ h1
 
 h2
   font-weight 300
-  padding 0 40px
+  padding 0 10px
   text-align center
   font-size 18px
-  opacity 0.4
   line-height 1.5
   transition all 0.3s
+  color rgba(textColor, 0.7)
+  a
+    color rgba(textColor, 1)
   &:hover
     opacity 1
+    a
+      text-decoration underline
 
 a
  color textColor
  text-decoration none
+
+@media (max-width: 480px)
+  h1
+    font-size 48px
+    border-width 4px
+  h2
+    font-size 16px
