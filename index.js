@@ -1,26 +1,27 @@
 require("dotenv").load()
 
 var express = require("express")
+var harp = require("harp")
 var etsy = require("./lib/etsy").new(process.env.OAUTH_CONSUMER_KEY)
-var shop = require("./shop.json")
+var shop = require("./lib/shop.json")
+var listings = []
+
 var app = express()
+app.use(express.static(__dirname + "/public"))
+app.use(harp.mount(__dirname + "/public"))
+app.set('port', (process.env.PORT || 5000))
+app.set('view engine', 'jade')
 
 app.get('/', function(req, res){
-  res.json(listings)
+  res.render('index', {
+    listings: listings
+  })
 })
 
-var listings = []
-var listings_path = "/shops/" + shop.shop_id + "/listings/active"
-var listing_options = {
-	fields: "title,description,url,price,listing_id",
-	limit: 100,
-	includes: "Images"
-}
-
-etsy.get(listings_path, listing_options, function(err, res) {
+etsy.getActiveListingsForShop(shop.shop_id, function(err, res) {
 	if (err) throw (err)
 	listings = res
-	app.listen((process.env.PORT || 5000), function(){
-		console.log("app is ready")
+  app.listen(app.get('port'), function() {
+    console.log("app is running at localhost:" + app.get('port'))
 	})
 })
