@@ -1,0 +1,32 @@
+{
+  "shop_id": 6826440,
+  "shop_name": "FoxtownVintage",
+  "user_id": 20296779,
+  "creation_tsz": 1332722481,
+  "title": null,
+  "announcement": "Welcome to Foxtown.",
+  "currency_code": "USD",
+  "is_vacation": false,
+  "vacation_message": "Hello! Fox City Vintage will be on vacation until September 15, 2013. See you soon!",
+  "sale_message": "I&#39;m so glad you found something to enjoy from my shop.\r\r\nThank you!",
+  "digital_sale_message": null,
+  "last_updated_tsz": 1400971166,
+  "listing_active_count": 42,
+  "login_name": "JenelleArlyse",
+  "accepts_custom_requests": false,
+  "policy_welcome": null,
+  "policy_payment": "I accept credit card payments directly through Etsy. \n\nAll payments are due at the time of purchase. ",
+  "policy_shipping": "PLEASE ASK ABOUT RUSH SHIPPING BEFORE PURCHASING THE ITEM.\n\nAll items are shipped from San Francisco, California.\n\nAll items are shipped out via USPS on Mondays and Thursdays.\n\nI am not responsible for items lost in the mail. I will provide a confirmation/tracking number for domestic packages.\n\nSend a message to inquire about international shipping. \n\nI ship internationally with First Class Mail, which does not come with a tracking number and takes 3-6 weeks. \n",
+  "policy_refunds": "Vintage means that the items have been pre-owned. Normal wear is expected when an item has travelled through time for 20 years or more. I am specific when describing flaws that are above average. \n\nNo refunds are offered. Please feel free to contact me with ANY questions concerning an item&#39;s condition or measurements before purchasing. \n\nI am not responsible for items lost in the mail. A confirmation/tracking number will be provided.",
+  "policy_additional": "Sizing:\nI include the tag size (if any) in addition to measurements taken while lying flat. It is always a good idea to compare one of your favorite flattering pieces to the measurements listed. I&#39;m happy to provide any additional information you may need.",
+  "policy_seller_info": null,
+  "policy_updated_tsz": 1401030879,
+  "vacation_autoreply": "Hello,\r\n\r\nFox City Vintage will be in vacation mode until September 15, 2013. I will be happy to answer your message when I return.\r\n\r\nThanks,\r\n\r\nJenelle",
+  "url": "https://www.etsy.com/shop/FoxtownVintage?utm_source=foxtownvintage&utm_medium=api&utm_campaign=api",
+  "image_url_760x100": "https://img1.etsystatic.com/040/0/6826440/iusb_760x100.13642791_9xbr.jpg",
+  "num_favorers": 54,
+  "has_tax_preferences": false,
+  "languages": [
+    "en-US"
+  ]
+}

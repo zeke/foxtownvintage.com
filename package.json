@@ -1,0 +1,32 @@
+{
+  "name": "foxtownvintage.com",
+  "version": "0.0.0",
+  "description": "This is a template app for use with the [Harp web server](http://harpjs.com).",
+  "main": "index.js",
+  "dependencies": {
+    "dotenv": "^0.2.8",
+    "etsy": "^0.1.1",
+    "express": "^4.3.1",
+    "merge": "^1.1.3",
+    "superagent": "^0.18.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zeke/foxtownvintage.com.git"
+  },
+  "keywords": [
+    "foxtown",
+    "vintage",
+    "website"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zeke/foxtownvintage.com/issues"
+  },
+  "homepage": "https://github.com/zeke/foxtownvintage.com"
+}
