@@ -1,88 +1,113 @@
-@font-face
-  font-family 'go'
-  src url('/fonts/go-book.woff') format('woff')
-  font-weight normal
-  font-style normal
-
-@font-face
-  font-family 'go'
-  src url('/fonts/go-med.woff') format('woff')
-  font-weight bold
-  font-style normal
+@import "_mixins.styl"
+@import "_fonts.styl"
 
 backgroundColor = #F3CCCC
-textColor = #980329
+linkColor = #980329
+otherColor = white
+columnWidth = 300px
+columnGap = 5px
 
 *, *:before, *:after
   -moz-box-sizing border-box
   -webkit-box-sizing border-box
   box-sizing border-box
 
-html, body
-  // width 100%
-  // height 100%
-
 body
   font-family 'go', sans-serif
   margin 0
-  // padding 20px
-  color textColor
+  padding 0
+  color linkColor
   background backgroundColor
   position relative
 
-section
-  max-width 1000px
-  margin 0 auto
-  position relative
+header
+  margin 0
+  padding 80px 0 80px
 
 h1
   font-weight normal
   text-align center
-  font-size 72px
   line-height 1
   margin 0
-  padding 20px 30px
-  // border 7px solid white
-  color white
+  padding 0
+  text-transform uppercase
+  color otherColor
+  font-size 44px
+  transition all 0.3s
   a
     text-decoration none
-    color white
+    color otherColor
 
-ul.listings
-  margin 0
-  padding 0
-  list-style none
-  > li
-    display block
-    width 300px
-    margin 0
-    padding 15px
-    img
-      width 100%
+  @media (min-width: 620px)
+    font-size: 92px
+  @media (min-width: 930px)
+    font-size 162px
+  // @media (min-width: 1240px)
+  //   font-size 222px
 
 h2
-  font-weight 300
-  padding 0 10px
+  font-weight normal
   text-align center
-  font-size 18px
-  line-height 1.5
-  transition all 0.3s
-  color rgba(textColor, 0.7)
+  font-size 24px
+  line-height 1
+  margin 0
+  padding 20px 0 0 0
+  color rgba(linkColor, 0.4)
   a
-    color rgba(textColor, 1)
-  &:hover
-    opacity 1
+    text-decoration none
+    color linkColor
+
+ul.listings
+  margin 0 auto
+  position relative
+  padding 0
+  list-style none
+  column-gap columnGap
+  column-fill auto
+  column-count 1
+  max-width 310px
+  @media (min-width: 620px)
+    max-width 620px
+    column-count 2
+  @media (min-width: 930px)
+    max-width 930px
+    column-count 3
+  // @media (min-width: 1240px)
+  //   max-width 1240px
+  //   column-count 4
+
+  > li
+    display block
+    width columnWidth
+    column-break-inside avoid
+    margin 0
+    padding 10px 10px 30px 10px
     a
-      text-decoration underline
+
+      img
+        width 100%
+        border 8px solid otherColor
+        padding 0
+        margin 0
+
+      h3
+        font-weight 300
+        margin 0
+        padding 10px 10px
+        text-align center
+        font-size 16px
+        line-height 1.4
+        transition all 0.3s
+        color rgba(linkColor, 0.7)
+      &:hover
+        h3
+          color rgba(linkColor, 1)
+
+
+footer
+  // background black
+  padding 20px 20px 100px 20px
 
 a
- color textColor
+ color linkColor
  text-decoration none
-
-// @media (max-width: 480px)
-//   h1
-//     font-size 44px
-//     border-width 4px
-//     padding: 15px 20px
-//   h2
-//     font-size 16px

@@ -6,15 +6,22 @@ html
     meta(name="viewport" content="width=device-width, initial-scale=1")
     meta(name="description" content="Vintage clothing from the far corners of the world, available for purchase on our Etsy store.")
 
-    //- Stylesheets
     link(href="styles/styles.css", rel="stylesheet")
 
-    //- Javascripts
-    script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js")
-    script(src="//cdnjs.cloudflare.com/ajax/libs/masonry/3.1.5/masonry.pkgd.min.js")
     script(src="scripts/app.js")
     block head
 
   body
+
+    header
+      h1
+        a(href="https://www.etsy.com/shop/foxtownvintage") Foxtown
+      //- h2 Cupcake ipsum dolor sit, amet I pudding croissant.
+
     section
       block content
+
+    footer
+      h2
+        :markdown
+          Shop the vintage collection on [Etsy.com](https://www.etsy.com/shop/foxtownvintage).

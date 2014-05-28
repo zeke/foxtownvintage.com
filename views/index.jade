@@ -1,17 +1,10 @@
 extends layout
 
-
 block content
-
-  h1
-    a(href="https://www.etsy.com/shop/foxtownvintage") FOXTOWN
 
   ul.listings
     for listing in listings
       li.listing
         a(href=listing.url)
           img(src=listing.Images[0]["url_570xN"])
-
-  h2
-    | Shop our vintage collection on&nbsp;
-    a(href="https://www.etsy.com/shop/foxtownvintage") Etsy
+          h3= listing.title.replace("Vintage ", "")
